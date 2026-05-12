@@ -6,67 +6,106 @@
     <title>グリーンスケープ ナチュラルベーシック</title>
     <meta
       name="description"
-      content="自然と暮らす時間を、北海道の庭に。札幌の造園会社グリーンスケープ ナチュラルベーシックのトップページ。"
+      content="庭が変わると、毎日が変わる。札幌の造園会社グリーンスケープ ナチュラルベーシックのトップページ。"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="GREEN SCAPE home">
-        <span>GREEN</span><span>SCAPE</span>
+        <span class="brand-mark">GS</span>
+        <span class="brand-text">GREEN SCAPE</span>
+        <small>Garden & Exterior Design</small>
       </a>
       <nav class="global-nav" aria-label="主要メニュー">
-        <a href="#concept">庭づくり</a>
-        <a href="#works">施工事例</a>
-        <a href="#maintenance">メンテナンス</a>
-        <a href="#company">会社案内</a>
-        <a href="#contact">お問い合わせ</a>
+        <a href="#about"><span>ABOUT</span><small>私たちの想い</small></a>
+        <a href="#works"><span>WORKS</span><small>施工事例</small></a>
+        <a href="#service"><span>SERVICE</span><small>サービス</small></a>
+        <a href="#journal"><span>BLOG</span><small>ブログ</small></a>
+        <a href="#company"><span>COMPANY</span><small>会社概要</small></a>
       </nav>
+      <a class="header-contact" href="#contact">CONTACT<br /><small>お問い合わせ</small></a>
     </header>
 
     <main id="top">
-      <section class="hero-slider" aria-label="庭のある暮らし">
-        <div class="slide slide-1"></div>
-        <div class="slide slide-2"></div>
-        <div class="slide slide-3"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-copy">
-          <p class="eyebrow">SAPPORO GARDEN STUDIO</p>
-          <h1>庭は、暮らしと一緒に育っていく。</h1>
+      <section class="before-after-hero" aria-label="施工前と施工後の比較">
+        <div class="hero-panel before-panel">
+          <span class="paint-label dark">BEFORE</span>
+          <span class="panel-caption">施工前</span>
+        </div>
+        <div class="hero-panel after-panel">
+          <span class="paint-label light">AFTER</span>
+          <span class="panel-caption">施工後</span>
+        </div>
+        <div class="split-line" aria-hidden="true"></div>
+        <button class="compare-button" aria-label="施工前後を比較する">‹ ›</button>
+        <div class="hero-message">
+          <p class="eyebrow">BEFORE / AFTER GARDEN DESIGN</p>
+          <h1>CHANGE YOUR YARD,<br />CHANGE YOUR LIFE.</h1>
+          <p>庭が変わると、毎日が変わる。</p>
+        </div>
+        <p class="drag-note">DRAG<br /><span>左右にドラッグして比較できます</span></p>
+      </section>
+
+      <section id="about" class="magazine-section intro-split">
+        <div>
+          <p class="eyebrow">OUR STYLE</p>
+          <h2>A GARDEN MAKES<br />YOUR LIFE RICHER.</h2>
           <p>
-            北海道の光、風、雪どけの匂いまで、日々の景色になる庭づくりを。
+            自然とつながる心地よい居場所をつくる。北海道の気候と暮らしに寄り添い、
+            あなたの「外のリビング」をデザインします。
           </p>
+          <a class="brush-button" href="#company">ABOUT US</a>
+        </div>
+        <div class="lifestyle-photo"></div>
+      </section>
+
+      <section id="service" class="service-strip" aria-label="サービス">
+        <article>
+          <span>01</span>
+          <h3>GARDEN DESIGN</h3>
+          <p>庭づくり・外構設計</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>BEFORE / AFTER</h3>
+          <p>施工前後の提案</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>MAINTENANCE</h3>
+          <p>剪定・管理・育てる庭</p>
+        </article>
+      </section>
+
+      <section id="works" class="works-section">
+        <div class="section-title-row">
+          <div>
+            <p class="eyebrow">WORKS</p>
+            <h2>施工事例</h2>
+          </div>
+          <a href="#contact">VIEW ALL →</a>
+        </div>
+        <div class="work-cards">
+          <article>
+            <div class="work-before-after case-1"><span>BEFORE</span><span>AFTER</span></div>
+            <h3>札幌市 K様邸</h3>
+            <p>#リビング前の庭　#焚き火スペース</p>
+          </article>
+          <article>
+            <div class="work-before-after case-2"><span>BEFORE</span><span>AFTER</span></div>
+            <h3>恵庭市 M様邸</h3>
+            <p>#アプローチ　#ナチュラルガーデン</p>
+          </article>
+          <article>
+            <div class="work-before-after case-3"><span>BEFORE</span><span>AFTER</span></div>
+            <h3>北広島市 T様邸</h3>
+            <p>#目隠しフェンス　#プライベートガーデン</p>
+          </article>
         </div>
       </section>
 
-      <section id="concept" class="intro section-block">
-        <p class="eyebrow">CONCEPT</p>
-        <h2>工事ではなく、自然と暮らす時間をつくる。</h2>
-        <p>
-          つくって終わりではなく、春の芽吹き、夏の木陰、秋の色づき、冬の雪景色まで、
-          1年後も3年後も愛着が増す庭を考えます。
-        </p>
-      </section>
-
-      <section id="works" class="feature-grid" aria-label="施工事例の見せ方">
-        <article>
-          <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80" alt="緑に囲まれた庭" />
-          <h2>暮らしに近い庭</h2>
-          <p>窓辺、玄関、アプローチ。毎日目に入る場所から整えます。</p>
-        </article>
-        <article>
-          <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=1200&q=80" alt="春の植物" />
-          <h2>北海道の四季</h2>
-          <p>雪と緑の両方を前提に、季節の変化を楽しめる設計へ。</p>
-        </article>
-        <article id="maintenance">
-          <img src="https://images.unsplash.com/photo-1515096788709-a3cf4ce0a4a6?auto=format&fit=crop&w=1200&q=80" alt="庭を手入れする手元" />
-          <h2>育てるメンテナンス</h2>
-          <p>剪定や手入れも、庭の時間を長く楽しむための大切な仕事です。</p>
-        </article>
-      </section>
-
-      <section id="company" class="story section-block">
+      <section id="company" class="company-section">
         <p class="eyebrow">NATURAL BASIC</p>
         <h2>自然体で、でもきちんと信頼できる庭の相談相手。</h2>
         <p>
@@ -75,10 +114,13 @@
         </p>
       </section>
 
-      <section id="contact" class="contact">
-        <h2>庭のこと、まずは相談から。</h2>
-        <p>札幌・北海道の庭づくり、外構、メンテナンスのご相談を受け付けています。</p>
-        <a href="mailto:info@green-scape.net">info@green-scape.net</a>
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="script">Let's make</p>
+          <h2>your favorite place.</h2>
+          <p>理想の庭づくり、一緒に考えましょう。</p>
+        </div>
+        <a href="mailto:info@green-scape.net">ご相談・お見積りはこちら →</a>
       </section>
     </main>
   </body>
