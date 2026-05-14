@@ -1,213 +1,187 @@
 :root {
-  --bg: #f9f4e8;
-  --paper: #fffdf7;
-  --ink: #3f3a2f;
-  --lime: #bfdc67;
-  --deep: #2f6040;
-  --mustard: #d5a940;
-  --line: #d8cbab;
-  --tape: #f4df9d;
+  --bg: #f8f1de;
+  --paper: #fffaf0;
+  --ink: #3f3628;
+  --green: #375f41;
+  --lime: #b8d76d;
+  --mustard: #c79d37;
+  --tape: #ead68f;
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(rgba(72, 55, 25, 0.14) 0.7px, transparent 0.8px),
+    linear-gradient(170deg, #f6edd8, #f2e6cd 42%, #efe3c7);
+  background-size: 5px 5px, auto;
   color: var(--ink);
-  background: var(--bg);
   font-family: "Trebuchet MS", "Yu Gothic", sans-serif;
 }
 
-.paper-grain {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  opacity: .18;
-  background-image: radial-gradient(rgba(63,58,47,.25) .5px, transparent .5px);
-  background-size: 5px 5px;
-}
-
-.top-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: .9rem 1.5rem;
-  background: rgba(255, 253, 247, .94);
-  border-bottom: 2px dashed var(--line);
-}
-
-.logo { text-decoration: none; color: var(--deep); display: grid; }
-.logo .mini { font-size: .68rem; letter-spacing: .18em; }
-.logo .main { font-size: 1.4rem; font-weight: 900; letter-spacing: .08em; }
-
-.menu { display: flex; gap: 1rem; }
-.menu a { text-decoration: none; color: #54674b; font-weight: 800; font-size: .84rem; }
-
-.contact-btn {
-  text-decoration: none;
-  color: #fff;
-  background: var(--deep);
-  padding: .58rem .9rem;
-  border-radius: 999px;
-  font-weight: 800;
-}
-
-.flyer-sheet {
-  width: min(1160px, 94vw);
-  margin: 1.2rem auto 3rem;
-  background: linear-gradient(165deg, #fffef8, #fcf7ec);
-  border: 2px solid #eadfbe;
-  box-shadow: 0 12px 32px rgba(47, 96, 64, .12);
-  padding: 1.4rem;
+.poster {
   position: relative;
-}
-
-.hero { position: relative; }
-.tape { position: absolute; width: 96px; height: 22px; background: var(--tape); opacity: .85; z-index: 3; }
-.t1 { left: 5%; top: -12px; transform: rotate(-12deg); }
-.t2 { right: 6%; top: -8px; transform: rotate(16deg); }
-
-.hero-compare {
-  position: relative;
-  height: min(72vh, 700px);
-  border: 6px solid #f2e8ca;
-  border-radius: 14px;
+  width: min(1200px, 96vw);
+  min-height: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
   overflow: hidden;
 }
 
-.hero-photo { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.logo {
+  position: absolute;
+  left: 4%;
+  top: 1%;
+  margin: 0;
+  font-size: clamp(2.3rem, 7vw, 6rem);
+  letter-spacing: .04em;
+  color: var(--green);
+  text-shadow: 3px 3px 0 #f7efdb;
+  transform: rotate(-2deg);
+}
+
+.sub {
+  position: absolute;
+  top: 8.5%;
+  left: 5%;
+  margin: 0;
+  font-size: .8rem;
+  letter-spacing: .25em;
+  font-weight: 700;
+}
+
+.hand {
+  position: absolute;
+  margin: 0;
+  font-family: "Comic Sans MS", "Hiragino Maru Gothic Pro", cursive;
+  line-height: 1.35;
+  font-size: clamp(1rem, 2.1vw, 1.5rem);
+}
+.hand-a { top: 13%; left: 7%; transform: rotate(-7deg); }
+.hand-b { top: 15%; right: 7%; transform: rotate(8deg); color: #6d5b38; }
+
+.tape {
+  position: absolute;
+  width: 110px;
+  height: 26px;
+  background: linear-gradient(160deg, rgba(255,255,255,.25), rgba(255,255,255,0)), var(--tape);
+  opacity: .8;
+  z-index: 4;
+}
+.t1 { top: 22%; left: 9%; transform: rotate(-16deg); }
+.t2 { top: 24%; right: 15%; transform: rotate(19deg); }
+.t3 { top: 62%; left: 44%; transform: rotate(7deg); width: 130px; }
+
+.before-after {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  width: 70%;
+  height: 34%;
+  transform: rotate(-2.8deg);
+  box-shadow: 8px 12px 24px rgba(0,0,0,.15);
+  overflow: hidden;
+  border: 10px solid #f3e7ca;
+}
+
+.photo { position: absolute; inset: 0; background-size: cover; background-position: center; }
 .before { background-image: url('https://images.unsplash.com/photo-1460533893735-45cea2212645?auto=format&fit=crop&w=1800&q=80'); }
 .after {
   background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=80');
-  clip-path: inset(0 45% 0 0);
+  clip-path: polygon(0 0, 48% 0, 48% 100%, 0 100%);
 }
-
-.tag {
+.photo span {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background: var(--paper);
-  border: 2px solid #d8c690;
-  padding: .3rem .7rem;
+  top: .6rem;
+  left: .6rem;
+  background: rgba(255,250,240,.95);
   font-weight: 900;
+  padding: .2rem .5rem;
 }
-.after .tag { left: auto; right: 1rem; }
+.after span { left: auto; right: .6rem; }
 
-.split-line { position: absolute; top: 0; bottom: 0; left: 55%; width: 4px; background: #fff; }
+.split { position: absolute; top: 0; bottom: 0; left: 48%; width: 3px; background: #fff; }
+.slider { position: absolute; left: 8%; right: 8%; bottom: .7rem; width: 84%; accent-color: var(--lime); }
 
-.paper-copy {
+.note {
   position: absolute;
-  left: 50%;
-  top: 48%;
-  transform: translate(-50%, -50%) rotate(-2deg);
-  background: #fffdf6;
-  padding: 1.2rem 1.6rem;
-  border: 2px solid #cfbe91;
-  box-shadow: 6px 6px 0 #ece0bf;
-  text-align: center;
-}
-.paper-copy p { margin: 0; font-size: clamp(1.4rem, 4vw, 3rem); line-height: 1.1; font-weight: 900; color: #31442a; }
-
-.compare-slider {
-  position: absolute;
-  left: 8%;
-  right: 8%;
-  bottom: 1rem;
-  width: 84%;
-  accent-color: var(--lime);
-}
-
-.about-zine {
-  margin-top: 2.6rem;
-  display: grid;
-  grid-template-columns: 1.2fr .9fr .9fr;
-  gap: 1.2rem;
-  align-items: start;
-}
-
-.cut-paper {
+  top: 56%;
+  left: 10%;
+  width: 40%;
   background: var(--paper);
-  border: 2px solid var(--line);
-  padding: 1.4rem;
-  box-shadow: 7px 7px 0 #eee2bf;
-  transform: rotate(-1deg);
+  padding: .9rem 1rem;
+  border: 2px solid #d7c5a2;
+  transform: rotate(-4deg);
+  box-shadow: 6px 6px 0 #e5d5b0;
 }
-.cap { letter-spacing: .16em; font-size: .74rem; color: #607250; font-weight: 800; }
-.about-text h2 { margin-top: .3rem; font-size: clamp(1.5rem, 3vw, 2.4rem); }
+.note h2 { margin: 0 0 .5rem; line-height: 1.28; font-size: clamp(1.1rem, 2.6vw, 2rem); }
+.note p { margin: 0; line-height: 1.5; }
 
-.snap {
+.cut {
+  position: absolute;
   margin: 0;
   background: #fff;
-  border: 1px solid #ddd2b6;
-  box-shadow: 0 10px 20px rgba(0,0,0,.12);
-  padding: .6rem .6rem 1.3rem;
+  padding: .45rem .45rem 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,.16);
 }
-.snap img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; }
-.snap figcaption { margin-top: .45rem; font-size: .8rem; color: #66775a; }
-.s1 { transform: rotate(-5deg); }
-.s2 { transform: rotate(6deg); margin-top: 2rem; }
+.cut img { width: 100%; height: auto; display: block; aspect-ratio: 4/5; object-fit: cover; }
+.cut figcaption { margin-top: .35rem; font-size: .82rem; }
 
-.works, .services { margin-top: 2.8rem; }
-.paper-title {
-  display: inline-block;
-  padding: .4rem .9rem;
-  background: #f0f7d9;
-  border-left: 8px solid var(--deep);
-  transform: rotate(-1deg);
-}
-.paper-title.mustard { background: #fbefcf; border-left-color: var(--mustard); }
+.c1 { top: 54%; right: 8%; width: 24%; transform: rotate(8deg); }
+.c2 { top: 73%; left: 9%; width: 21%; transform: rotate(-11deg); }
+.c3 { top: 72%; left: 36%; width: 22%; transform: rotate(6deg); }
+.c4 { top: 69%; right: 10%; width: 22%; transform: rotate(-7deg); }
 
-.polaroid-row {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-.polaroid-card { background: #fff; padding: .65rem .65rem 1.1rem; border: 1px solid #e2d7b8; }
-.polaroid-photo { aspect-ratio: 1 / 1; background-size: cover; background-position: center; border: 1px solid #ddd; }
-.w1 { background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80'); }
-.w2 { background-image: url('https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&w=900&q=80'); }
-.w3 { background-image: url('https://images.unsplash.com/photo-1430285561322-7808604715df?auto=format&fit=crop&w=900&q=80'); }
-
-.service-grid {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: .9rem;
-}
-.service-grid article {
-  background: #fffef8;
-  border: 2px dashed #d6c79f;
-  padding: 1rem;
-}
-.icon { font-size: 1.4rem; color: #56703b; }
-
-.bottom-note {
-  margin-top: 3rem;
-  padding: 2rem 1rem 1.5rem;
-  text-align: center;
-  border-top: 2px dashed var(--line);
-  position: relative;
-}
-.bottom-note::before,
-.bottom-note::after {
-  content: "✿ 𖧷 ❁ ✿";
+.services {
   position: absolute;
-  bottom: .3rem;
-  color: #5f8a5a;
-  font-size: 1.4rem;
+  top: 51%;
+  right: 11%;
+  transform: rotate(-2deg);
+  font-weight: 700;
+  color: #4e6e3f;
+  text-shadow: 2px 2px 0 #f7edd4;
 }
-.bottom-note::before { left: 1rem; }
-.bottom-note::after { right: 1rem; }
-.bottom-note a { color: #fff; background: var(--deep); text-decoration: none; padding: .7rem 1rem; border-radius: 999px; font-weight: 800; display: inline-block; margin-top: .8rem; }
+.services p { margin: .25rem 0; }
 
-@media (max-width: 960px) {
-  .top-header { flex-wrap: wrap; }
-  .menu { width: 100%; justify-content: center; flex-wrap: wrap; }
-  .about-zine, .polaroid-row, .service-grid { grid-template-columns: 1fr; }
-  .s2 { margin-top: 0; }
+.contact {
+  position: absolute;
+  left: 32%;
+  bottom: 3%;
+  margin: 0;
+  padding: .5rem .8rem;
+  background: #f4e9cb;
+  border: 2px dashed #96733b;
+  transform: rotate(1deg);
+  font-weight: 700;
+}
+.contact a { color: #2f5d3b; }
+
+.scribble {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.scribble path,
+.scribble circle {
+  fill: none;
+  stroke: rgba(72, 112, 70, .65);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 2 9;
+}
+
+@media (max-width: 920px) {
+  .poster { min-height: 1800px; }
+  .before-after { left: 6%; width: 88%; height: 26%; }
+  .note { top: 48%; left: 8%; width: 84%; }
+  .services { top: 64%; left: 10%; right: auto; }
+  .c1 { top: 63%; right: 10%; width: 38%; }
+  .c2 { top: 75%; left: 7%; width: 40%; }
+  .c3 { top: 78%; left: 52%; width: 40%; }
+  .c4 { top: 89%; left: 11%; width: 42%; }
+  .contact { left: 7%; right: 7%; bottom: 2%; }
 }
