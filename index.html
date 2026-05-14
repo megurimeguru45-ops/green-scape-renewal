@@ -3,137 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>グリーンスケープ ナチュラルベーシック</title>
+    <title>GREEN SCAPE | 暮らし系ガーデンショップ</title>
     <meta
       name="description"
-      content="庭が変わると、毎日が変わる。庭のある暮らしを楽しむショップのような、グリーンスケープ ナチュラルベーシックのトップページ。"
+      content="1枚のフライヤーみたいな世界観で、庭のある暮らしを提案するGREEN SCAPEのトップページ。"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="paper-noise"></div>
-    <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="GREEN SCAPE home">
-        <span class="brand-mark">GARDEN LIFE STORE</span>
-        <span class="brand-text">GREEN SCAPE</span>
-        <small>庭のある暮らしを楽しむ、DIYガーデンショップ</small>
+    <div class="paper-grain"></div>
+
+    <header class="top-header" id="top">
+      <a class="logo" href="#top" aria-label="GREEN SCAPE home">
+        <span class="mini">GARDEN GOODS & LIFE</span>
+        <span class="main">GREEN SCAPE</span>
       </a>
-      <nav class="global-nav" aria-label="主要メニュー">
+      <nav class="menu" aria-label="メインメニュー">
         <a href="#about">ABOUT</a>
         <a href="#works">WORKS</a>
         <a href="#service">SERVICE</a>
-        <a href="#journal">JOURNAL</a>
-        <a href="#company">COMPANY</a>
       </nav>
-      <a class="header-contact" href="#contact">CONTACT</a>
+      <a class="contact-btn" href="#contact">お問い合わせ</a>
     </header>
 
-    <main>
-      <section class="hero-board" aria-label="施工前と施工後の比較">
-        <div class="tape tape-left"></div>
-        <div class="tape tape-right"></div>
-        <p class="stamp-label">NEW SEASON PICKUP</p>
-        <p class="hero-copy-note">庭で遊ぶ暮らしを、もっと明るく、もっとワクワクに。</p>
+    <main class="flyer-sheet">
+      <section class="hero" aria-label="施工前後の比較ビジュアル">
+        <div class="tape t1"></div>
+        <div class="tape t2"></div>
 
-        <div class="hero-slider" id="heroSlider">
-          <div class="hero-image before-layer">
-            <span class="polaroid-tag before-stamp">BEFORE</span>
-            <span class="panel-caption">施工前 / 使いづらい庭</span>
+        <div class="hero-compare" id="heroCompare">
+          <div class="hero-photo before">
+            <span class="tag">BEFORE</span>
           </div>
-          <div class="hero-image after-layer" id="afterLayer">
-            <span class="polaroid-tag after-stamp">AFTER</span>
-            <span class="panel-caption">施工後 / 遊べる庭空間</span>
+          <div class="hero-photo after" id="afterLayer">
+            <span class="tag">AFTER</span>
           </div>
-          <div class="divider" id="divider"></div>
+          <div class="split-line" id="splitLine"></div>
 
-          <div class="hero-message">
-            <p class="eyebrow">AMERICAN RETRO POP × NATURAL GREEN</p>
-            <h1>BEFORE / AFTERで見る、<br />庭のたのしい変化。</h1>
-            <p>「高級造園」ではなく、「庭のある暮らしを楽しむショップ」へ。</p>
+          <div class="paper-copy">
+            <p>CHANGE YOUR YARD,<br />CHANGE YOUR LIFE</p>
           </div>
 
-          <input id="compareRange" class="compare-range" type="range" min="0" max="100" value="56" aria-label="施工前後の比較スライダー" />
-          <p class="drag-note">← 手描き矢印みたいにドラッグして比較 →</p>
+          <input id="compareRange" class="compare-slider" type="range" min="0" max="100" value="55" aria-label="施工前後比較" />
         </div>
       </section>
 
-      <section id="about" class="collage-section intro-split">
-        <article class="paper-card main-copy">
-          <p class="eyebrow">OUR STYLE</p>
-          <h2>名刺の世界観そのまま、<br />雑貨屋みたいな庭づくり。</h2>
+      <section id="about" class="about-zine">
+        <article class="about-text cut-paper">
+          <p class="cap">ABOUT</p>
+          <h2>「施工会社」より<br />「庭のある暮らし屋さん」。</h2>
           <p>
-            白〜生成りの紙の上に、黄緑とナチュラルグリーン。手描き植物やラフな余白を活かして、
-            暮らしに寄り添う「庭で遊ぶ時間」を提案します。
+            雑貨屋さんで好きな道具を選ぶみたいに、
+            たのしく庭づくりを相談できるお店です。
+            白〜生成りの世界観に、黄緑と深緑、マスタードを効かせて
+            暮らしに寄り添うガーデンを提案します。
           </p>
-          <a class="cutout-button" href="#company">ABOUT US</a>
         </article>
-        <aside class="polaroid-cluster" aria-label="ポラロイド風イメージ">
-          <figure class="polaroid p1">
-            <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=900&q=80" alt="庭でくつろぐライフスタイル" />
-            <figcaption>庭で過ごす午後</figcaption>
-          </figure>
-          <figure class="polaroid p2">
-            <img src="https://images.unsplash.com/photo-1558293846-428240a5a6f3?auto=format&fit=crop&w=900&q=80" alt="植物の寄せ植え" />
-            <figcaption>グリーンのある玄関</figcaption>
-          </figure>
-        </aside>
+
+        <figure class="snap s1">
+          <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=900&q=80" alt="庭でくつろぐ暮らし" />
+          <figcaption>暮らしに庭時間を。</figcaption>
+        </figure>
+
+        <figure class="snap s2">
+          <img src="https://images.unsplash.com/photo-1558293846-428240a5a6f3?auto=format&fit=crop&w=900&q=80" alt="植物と雑貨" />
+          <figcaption>植物と雑貨みたいな庭。</figcaption>
+        </figure>
       </section>
 
-      <section id="service" class="service-strip" aria-label="サービス">
-        <article><span>01</span><h3>GARDEN DIY PLAN</h3><p>庭づくり・外構設計</p></article>
-        <article><span>02</span><h3>BEFORE / AFTER</h3><p>施工前後の体感提案</p></article>
-        <article><span>03</span><h3>MAINTENANCE CLUB</h3><p>剪定・管理・育てる庭</p></article>
-      </section>
-
-      <section id="works" class="works-section">
-        <div class="section-title-row">
-          <div><p class="eyebrow">WORKS</p><h2>施工事例</h2></div>
-          <a href="#contact">VIEW ALL →</a>
-        </div>
-        <div class="work-cards">
-          <article class="work-card">
-            <div class="work-before-after case-1"><span>BEFORE</span><span>AFTER</span></div>
-            <h3>札幌市 K様邸</h3><p>#リビング前の庭 #焚き火スペース</p>
+      <section id="works" class="works">
+        <h2 class="paper-title">WORKS / 施工事例</h2>
+        <div class="polaroid-row">
+          <article class="polaroid-card">
+            <div class="polaroid-photo w1"></div>
+            <h3>札幌市 K様邸</h3>
+            <p>#焚き火スペース #芝の庭</p>
           </article>
-          <article class="work-card">
-            <div class="work-before-after case-2"><span>BEFORE</span><span>AFTER</span></div>
-            <h3>恵庭市 M様邸</h3><p>#アプローチ #ナチュラルガーデン</p>
+          <article class="polaroid-card">
+            <div class="polaroid-photo w2"></div>
+            <h3>恵庭市 M様邸</h3>
+            <p>#アプローチ #ナチュラル外構</p>
           </article>
-          <article class="work-card">
-            <div class="work-before-after case-3"><span>BEFORE</span><span>AFTER</span></div>
-            <h3>北広島市 T様邸</h3><p>#目隠しフェンス #プライベートガーデン</p>
+          <article class="polaroid-card">
+            <div class="polaroid-photo w3"></div>
+            <h3>北広島市 T様邸</h3>
+            <p>#目隠しフェンス #プライベート庭</p>
           </article>
         </div>
       </section>
 
-      <section id="company" class="company-section">
-        <p class="eyebrow">NATURAL BASIC</p>
-        <h2>女性も入りやすい、<br />やさしいDIYガーデンの拠点。</h2>
-        <p>予算やお手入れの不安を整理しながら、毎日の暮らしにフィットする「遊べる庭」を一緒につくります。</p>
+      <section id="service" class="services">
+        <h2 class="paper-title mustard">SERVICE</h2>
+        <div class="service-grid">
+          <article>
+            <span class="icon">✿</span>
+            <h3>ガーデンプラン</h3>
+            <p>暮らしに合う動線と植栽を、やさしく設計。</p>
+          </article>
+          <article>
+            <span class="icon">🪴</span>
+            <h3>DIYサポート</h3>
+            <p>自分でも楽しめる施工プランを一緒に。</p>
+          </article>
+          <article>
+            <span class="icon">✂</span>
+            <h3>メンテナンス</h3>
+            <p>季節ごとの手入れや剪定も気軽に相談。</p>
+          </article>
+        </div>
       </section>
 
-      <section id="contact" class="contact-section">
-        <div>
-          <p class="script">Let's make your garden playground.</p>
-          <h2>お気に入りの庭時間を、<br />一緒に。</h2>
-          <p>理想の庭づくり、まずは気軽にご相談ください。</p>
-        </div>
-        <a href="mailto:info@green-scape.net">ご相談・お見積りはこちら →</a>
+      <section id="contact" class="bottom-note">
+        <p>YOUR DAILY GARDEN, YOUR HAPPY PLACE.</p>
+        <a href="mailto:info@green-scape.net">ご相談はこちら →</a>
       </section>
     </main>
 
     <script>
       const range = document.getElementById('compareRange');
       const afterLayer = document.getElementById('afterLayer');
-      const divider = document.getElementById('divider');
+      const splitLine = document.getElementById('splitLine');
 
-      const updateSlider = (value) => {
+      const updateCompare = (value) => {
         afterLayer.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
-        divider.style.left = `${value}%`;
+        splitLine.style.left = `${value}%`;
       };
 
-      updateSlider(range.value);
-      range.addEventListener('input', (e) => updateSlider(e.target.value));
+      updateCompare(range.value);
+      range.addEventListener('input', (e) => updateCompare(e.target.value));
     </script>
   </body>
 </html>
