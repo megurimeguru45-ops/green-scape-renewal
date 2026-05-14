@@ -6,117 +6,78 @@
     <title>GREEN SCAPE | 暮らし系ガーデンショップ</title>
     <meta
       name="description"
-      content="1枚のフライヤーみたいな世界観で、庭のある暮らしを提案するGREEN SCAPEのトップページ。"
+      content="雑貨店の店頭ポスターみたいな、紙コラージュ1枚で見せるGREEN SCAPEのフライヤー。"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="paper-grain"></div>
+    <main class="poster" aria-label="GREEN SCAPE巨大フライヤー">
+      <h1 class="logo">GREEN SCAPE</h1>
+      <p class="sub">GARDEN GOODS / LIFE / SCRAP ZINE STYLE</p>
 
-    <header class="top-header" id="top">
-      <a class="logo" href="#top" aria-label="GREEN SCAPE home">
-        <span class="mini">GARDEN GOODS & LIFE</span>
-        <span class="main">GREEN SCAPE</span>
-      </a>
-      <nav class="menu" aria-label="メインメニュー">
-        <a href="#about">ABOUT</a>
-        <a href="#works">WORKS</a>
-        <a href="#service">SERVICE</a>
-      </nav>
-      <a class="contact-btn" href="#contact">お問い合わせ</a>
-    </header>
+      <p class="hand hand-a">庭は、
+        <br />毎日の気分を
+        <br />つくる雑貨。</p>
+      <p class="hand hand-b">外構会社じゃなくて
+        <br />暮らし編集室。</p>
 
-    <main class="flyer-sheet">
-      <section class="hero" aria-label="施工前後の比較ビジュアル">
-        <div class="tape t1"></div>
-        <div class="tape t2"></div>
+      <div class="tape t1"></div>
+      <div class="tape t2"></div>
+      <div class="tape t3"></div>
 
-        <div class="hero-compare" id="heroCompare">
-          <div class="hero-photo before">
-            <span class="tag">BEFORE</span>
-          </div>
-          <div class="hero-photo after" id="afterLayer">
-            <span class="tag">AFTER</span>
-          </div>
-          <div class="split-line" id="splitLine"></div>
-
-          <div class="paper-copy">
-            <p>CHANGE YOUR YARD,<br />CHANGE YOUR LIFE</p>
-          </div>
-
-          <input id="compareRange" class="compare-slider" type="range" min="0" max="100" value="55" aria-label="施工前後比較" />
-        </div>
+      <section class="before-after" id="heroCompare" aria-label="施工前後のラフ比較">
+        <div class="photo before"><span>BEFORE</span></div>
+        <div class="photo after" id="afterLayer"><span>AFTER</span></div>
+        <div class="split" id="splitLine"></div>
+        <input id="compareRange" class="slider" type="range" min="0" max="100" value="48" aria-label="施工前後比較" />
       </section>
 
-      <section id="about" class="about-zine">
-        <article class="about-text cut-paper">
-          <p class="cap">ABOUT</p>
-          <h2>「施工会社」より<br />「庭のある暮らし屋さん」。</h2>
-          <p>
-            雑貨屋さんで好きな道具を選ぶみたいに、
-            たのしく庭づくりを相談できるお店です。
-            白〜生成りの世界観に、黄緑と深緑、マスタードを効かせて
-            暮らしに寄り添うガーデンを提案します。
-          </p>
-        </article>
+      <article class="note n1">
+        <h2>庭のある暮らしを、
+          <br />ショップカードみたいに提案。</h2>
+        <p>
+          白・生成り・黄緑・深緑・マスタード。
+          ラフな手描き線と、紙を重ねた質感で
+          好きな雑貨を選ぶように庭づくり。
+        </p>
+      </article>
 
-        <figure class="snap s1">
-          <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=900&q=80" alt="庭でくつろぐ暮らし" />
-          <figcaption>暮らしに庭時間を。</figcaption>
-        </figure>
+      <figure class="cut c1">
+        <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=900&q=80" alt="庭でくつろぐ暮らし" />
+        <figcaption>暮らしに庭時間を。</figcaption>
+      </figure>
 
-        <figure class="snap s2">
-          <img src="https://images.unsplash.com/photo-1558293846-428240a5a6f3?auto=format&fit=crop&w=900&q=80" alt="植物と雑貨" />
-          <figcaption>植物と雑貨みたいな庭。</figcaption>
-        </figure>
-      </section>
+      <figure class="cut c2">
+        <img src="https://images.unsplash.com/photo-1558293846-428240a5a6f3?auto=format&fit=crop&w=900&q=80" alt="植物と雑貨" />
+        <figcaption>植物と雑貨みたいな庭。</figcaption>
+      </figure>
 
-      <section id="works" class="works">
-        <h2 class="paper-title">WORKS / 施工事例</h2>
-        <div class="polaroid-row">
-          <article class="polaroid-card">
-            <div class="polaroid-photo w1"></div>
-            <h3>札幌市 K様邸</h3>
-            <p>#焚き火スペース #芝の庭</p>
-          </article>
-          <article class="polaroid-card">
-            <div class="polaroid-photo w2"></div>
-            <h3>恵庭市 M様邸</h3>
-            <p>#アプローチ #ナチュラル外構</p>
-          </article>
-          <article class="polaroid-card">
-            <div class="polaroid-photo w3"></div>
-            <h3>北広島市 T様邸</h3>
-            <p>#目隠しフェンス #プライベート庭</p>
-          </article>
-        </div>
-      </section>
+      <figure class="cut c3">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="芝のある庭" />
+        <figcaption>札幌市 K様邸 #焚き火スペース</figcaption>
+      </figure>
 
-      <section id="service" class="services">
-        <h2 class="paper-title mustard">SERVICE</h2>
-        <div class="service-grid">
-          <article>
-            <span class="icon">✿</span>
-            <h3>ガーデンプラン</h3>
-            <p>暮らしに合う動線と植栽を、やさしく設計。</p>
-          </article>
-          <article>
-            <span class="icon">🪴</span>
-            <h3>DIYサポート</h3>
-            <p>自分でも楽しめる施工プランを一緒に。</p>
-          </article>
-          <article>
-            <span class="icon">✂</span>
-            <h3>メンテナンス</h3>
-            <p>季節ごとの手入れや剪定も気軽に相談。</p>
-          </article>
-        </div>
-      </section>
+      <figure class="cut c4">
+        <img src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&w=900&q=80" alt="ナチュラル外構" />
+        <figcaption>恵庭市 M様邸 #ナチュラル外構</figcaption>
+      </figure>
 
-      <section id="contact" class="bottom-note">
-        <p>YOUR DAILY GARDEN, YOUR HAPPY PLACE.</p>
-        <a href="mailto:info@green-scape.net">ご相談はこちら →</a>
-      </section>
+      <div class="services">
+        <p>✿ ガーデンプラン</p>
+        <p>🪴 DIYサポート</p>
+        <p>✂ メンテナンス</p>
+      </div>
+
+      <p class="contact">ご相談メモをどうぞ → <a href="mailto:info@green-scape.net">info@green-scape.net</a></p>
+
+      <svg class="scribble" viewBox="0 0 1000 1400" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M50 120 C240 40, 380 190, 560 120 S870 180, 970 80" />
+        <path d="M70 420 C220 520, 420 310, 650 440 S900 530, 950 470" />
+        <path d="M40 760 C260 680, 340 900, 560 820 S810 730, 960 860" />
+        <path d="M90 1110 C300 990, 430 1260, 660 1120 S860 980, 940 1180" />
+        <circle cx="260" cy="278" r="44" />
+        <circle cx="838" cy="980" r="34" />
+      </svg>
     </main>
 
     <script>
@@ -125,7 +86,7 @@
       const splitLine = document.getElementById('splitLine');
 
       const updateCompare = (value) => {
-        afterLayer.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+        afterLayer.style.clipPath = `polygon(0 0, ${value}% 0, ${value}% 100%, 0 100%)`;
         splitLine.style.left = `${value}%`;
       };
 
