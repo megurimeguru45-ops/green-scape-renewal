@@ -13,9 +13,9 @@
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="GREEN SCAPE home">
-        <span class="brand-mark">GS</span>
+        <span class="brand-mark">GS GARAGE</span>
         <span class="brand-text">GREEN SCAPE</span>
-        <small>Garden & Exterior Design</small>
+        <small>DIY Garden & Exterior Works</small>
       </a>
       <nav class="global-nav" aria-label="主要メニュー">
         <a href="#about"><span>ABOUT</span><small>私たちの想い</small></a>
@@ -29,31 +29,38 @@
 
     <main id="top">
       <section class="before-after-hero" aria-label="施工前と施工後の比較">
-        <div class="hero-panel before-panel">
-          <span class="paint-label dark">BEFORE</span>
-          <span class="panel-caption">施工前</span>
+        <p class="wood-tag">YARD REMODEL STATION</p>
+        <p class="hero-copy-note">庭で遊ぶ暮らし、秘密基地みたいな外時間へ。</p>
+
+        <div class="hero-slider" id="heroSlider">
+          <div class="hero-image before-layer">
+            <span class="stamp before-stamp">BEFORE</span>
+            <span class="panel-caption">施工前 / 使いづらい庭</span>
+          </div>
+          <div class="hero-image after-layer" id="afterLayer">
+            <span class="stamp after-stamp">AFTER</span>
+            <span class="panel-caption">施工後 / 遊べる庭空間</span>
+          </div>
+          <div class="divider" id="divider"></div>
+
+          <div class="hero-message">
+            <p class="eyebrow">AMERICAN RETRO POP × NATURAL GARDEN</p>
+            <h1>BEFORE / AFTERで見る、<br />庭の大変身。</h1>
+            <p>DIYカルチャーの楽しさを、暮らしの庭へ。</p>
+          </div>
+
+          <input id="compareRange" class="compare-range" type="range" min="0" max="100" value="55" aria-label="施工前後の比較スライダー" />
+          <p class="drag-note">DRAG TO COMPARE<br /><span>左右に動かして変化をチェック</span></p>
         </div>
-        <div class="hero-panel after-panel">
-          <span class="paint-label light">AFTER</span>
-          <span class="panel-caption">施工後</span>
-        </div>
-        <div class="split-line" aria-hidden="true"></div>
-        <button class="compare-button" aria-label="施工前後を比較する">‹ ›</button>
-        <div class="hero-message">
-          <p class="eyebrow">BEFORE / AFTER GARDEN DESIGN</p>
-          <h1>CHANGE YOUR YARD,<br />CHANGE YOUR LIFE.</h1>
-          <p>庭が変わると、毎日が変わる。</p>
-        </div>
-        <p class="drag-note">DRAG<br /><span>左右にドラッグして比較できます</span></p>
       </section>
 
       <section id="about" class="magazine-section intro-split">
         <div>
           <p class="eyebrow">OUR STYLE</p>
-          <h2>A GARDEN MAKES<br />YOUR LIFE RICHER.</h2>
+          <h2>木看板みたいにラフで、<br />使うほど好きになる庭。</h2>
           <p>
-            自然とつながる心地よい居場所をつくる。北海道の気候と暮らしに寄り添い、
-            あなたの「外のリビング」をデザインします。
+            ガレージ感・秘密基地感・アメリカ雑貨の空気を混ぜながら、
+            肩ひじ張らない「庭で過ごす楽しさ」をデザイン。センスは良く、でも話しかけやすい庭づくりを目指します。
           </p>
           <a class="brush-button" href="#company">ABOUT US</a>
         </div>
@@ -63,17 +70,17 @@
       <section id="service" class="service-strip" aria-label="サービス">
         <article>
           <span>01</span>
-          <h3>GARDEN DESIGN</h3>
+          <h3>GARDEN DIY PLAN</h3>
           <p>庭づくり・外構設計</p>
         </article>
         <article>
           <span>02</span>
           <h3>BEFORE / AFTER</h3>
-          <p>施工前後の提案</p>
+          <p>施工前後の体感提案</p>
         </article>
         <article>
           <span>03</span>
-          <h3>MAINTENANCE</h3>
+          <h3>MAINTENANCE CLUB</h3>
           <p>剪定・管理・育てる庭</p>
         </article>
       </section>
@@ -90,38 +97,52 @@
           <article>
             <div class="work-before-after case-1"><span>BEFORE</span><span>AFTER</span></div>
             <h3>札幌市 K様邸</h3>
-            <p>#リビング前の庭　#焚き火スペース</p>
+            <p>#リビング前の庭 #焚き火スペース</p>
           </article>
           <article>
             <div class="work-before-after case-2"><span>BEFORE</span><span>AFTER</span></div>
             <h3>恵庭市 M様邸</h3>
-            <p>#アプローチ　#ナチュラルガーデン</p>
+            <p>#アプローチ #ナチュラルガーデン</p>
           </article>
           <article>
             <div class="work-before-after case-3"><span>BEFORE</span><span>AFTER</span></div>
             <h3>北広島市 T様邸</h3>
-            <p>#目隠しフェンス　#プライベートガーデン</p>
+            <p>#目隠しフェンス #プライベートガーデン</p>
           </article>
         </div>
       </section>
 
       <section id="company" class="company-section">
         <p class="eyebrow">NATURAL BASIC</p>
-        <h2>自然体で、でもきちんと信頼できる庭の相談相手。</h2>
+        <h2>自然体で、でも頼れる。<br />庭のDIYパートナー。</h2>
         <p>
           まだ具体的に決まっていなくても大丈夫です。敷地、予算、手入れの不安を整理しながら、
-          その家らしい庭のかたちを一緒に考えます。
+          暮らしにフィットする「遊べる庭」を一緒につくります。
         </p>
       </section>
 
       <section id="contact" class="contact-section">
         <div>
-          <p class="script">Let's make</p>
-          <h2>your favorite place.</h2>
-          <p>理想の庭づくり、一緒に考えましょう。</p>
+          <p class="script">Let's build your base camp.</p>
+          <h2>お気に入りの庭時間を、<br />一緒に。</h2>
+          <p>理想の庭づくり、まずは気軽にご相談ください。</p>
         </div>
         <a href="mailto:info@green-scape.net">ご相談・お見積りはこちら →</a>
       </section>
     </main>
+
+    <script>
+      const range = document.getElementById('compareRange');
+      const afterLayer = document.getElementById('afterLayer');
+      const divider = document.getElementById('divider');
+
+      const updateSlider = (value) => {
+        afterLayer.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+        divider.style.left = `${value}%`;
+      };
+
+      updateSlider(range.value);
+      range.addEventListener('input', (e) => updateSlider(e.target.value));
+    </script>
   </body>
 </html>
