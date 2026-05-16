@@ -20,27 +20,31 @@ body {
 }
 
 .flyer::before {
-  content: '○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○';
+  content: '';
   position: absolute;
-  left: -26px;
-  top: 12px;
-  color: #5f8f3f;
-  font-size: 18px;
-  letter-spacing: 7px;
-  transform: rotate(12deg);
+  left: -24px;
+  top: 4px;
+  width: 250px;
+  height: 100px;
   opacity: .7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 100'%3E%3Cg fill='none' stroke='%235f8f3f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 80 C45 35, 85 18, 130 34 S210 46, 255 12'/%3E%3Cpath d='M42 48 C32 34, 30 23, 39 10 C54 22, 56 36, 42 48Z'/%3E%3Cpath d='M75 32 C68 20, 69 12, 79 3 C91 17, 89 27, 75 32Z'/%3E%3Cpath d='M111 31 C103 18, 105 8, 118 1 C129 17, 126 27, 111 31Z'/%3E%3Cpath d='M151 36 C142 25, 143 14, 154 6 C166 20, 164 31, 151 36Z'/%3E%3Cpath d='M188 34 C180 22, 181 12, 193 5 C205 20, 202 30, 188 34Z'/%3E%3Cpath d='M223 24 C214 12, 216 4, 228 0 C240 13, 236 21, 223 24Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(4deg);
 }
 
 .flyer::after {
-  content: '♧ ♧ ♧ ♧ ♧';
+  content: '';
   position: absolute;
-  right: 28px;
-  bottom: 20px;
-  color: #5f8f3f;
-  font-size: 22px;
-  letter-spacing: 8px;
-  transform: rotate(-8deg);
+  right: 12px;
+  bottom: 8px;
+  width: 300px;
+  height: 120px;
   opacity: .55;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 120'%3E%3Cg fill='none' stroke='%235f8f3f' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M8 108 C45 58, 95 42, 150 62 S235 78, 292 20'/%3E%3Cpath d='M30 80 c-18-18-12-37 4-50 c18 16 17 35-4 50Z'/%3E%3Cpath d='M82 55 c-12-18-8-31 7-43 c15 17 12 31-7 43Z'/%3E%3Cpath d='M138 58 c-16-14-14-30 1-43 c17 14 17 29-1 43Z'/%3E%3Cpath d='M206 63 c-14-16-12-33 5-45 c15 18 12 33-5 45Z'/%3E%3Cpath d='M258 39 c-13-12-11-25 3-35 c15 12 13 25-3 35Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-4deg);
 }
 
 .site-header {
@@ -77,31 +81,15 @@ body {
 
 .vine-hero {
   position: absolute;
-  left: 290px;
-  top: 8px;
-  width: 330px;
-  height: 40px;
-  opacity: .75;
-}
-
-.vine-hero::before {
-  content: '○ ○ ○ ○ ○ ○ ○ ○ ○';
-  position: absolute;
-  color: #5f8f3f;
-  font-size: 17px;
-  letter-spacing: 8px;
-  transform: rotate(-5deg);
-}
-
-.vine-hero::after {
-  content: '♧  ♧  ♧';
-  position: absolute;
-  left: 122px;
-  top: 15px;
-  color: #5f8f3f;
-  font-size: 19px;
-  letter-spacing: 14px;
-  transform: rotate(8deg);
+  left: 285px;
+  top: 0;
+  width: 360px;
+  height: 86px;
+  opacity: .72;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 86'%3E%3Cg fill='none' stroke='%235f8f3f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 66 C48 20, 92 13, 143 33 S241 52, 355 7'/%3E%3Cpath d='M45 38 C36 24, 39 11, 53 4 C63 21, 60 34, 45 38Z'/%3E%3Cpath d='M92 24 C84 11, 86 4, 98 1 C108 14, 105 23, 92 24Z'/%3E%3Cpath d='M136 30 C127 17, 131 7, 144 4 C154 18, 150 28, 136 30Z'/%3E%3Cpath d='M195 41 C186 27, 189 15, 202 9 C213 25, 208 37, 195 41Z'/%3E%3Cpath d='M254 38 C245 25, 248 13, 262 7 C273 23, 268 35, 254 38Z'/%3E%3Cpath d='M312 21 C303 9, 306 2, 318 1 C328 12, 324 20, 312 21Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-3deg);
 }
 
 .hero-photo {
@@ -212,26 +200,28 @@ body {
   border-bottom: 2px dashed #8fac6f;
 }
 .about::before {
-  content: '○ ○ ○ ○ ○ ○ ○ ○';
+  content: '';
   position: absolute;
-  left: 8px;
-  top: 8px;
-  color: #5f8f3f;
-  font-size: 15px;
-  letter-spacing: 7px;
-  transform: rotate(-5deg);
-  opacity: .65;
+  left: 4px;
+  top: -8px;
+  width: 220px;
+  height: 70px;
+  opacity: .55;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 70'%3E%3Cg fill='none' stroke='%235f8f3f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 58 C38 28, 78 12, 120 25 S180 39, 218 8'/%3E%3Cpath d='M38 30 C30 20, 33 9, 45 3 C54 16, 51 26, 38 30Z'/%3E%3Cpath d='M87 20 C79 8, 82 2, 93 1 C102 11, 99 19, 87 20Z'/%3E%3Cpath d='M139 29 C131 17, 134 7, 146 3 C156 16, 152 26, 139 29Z'/%3E%3Cpath d='M184 25 C176 14, 179 6, 190 2 C199 14, 196 22, 184 25Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .about::after {
-  content: '♧ ♧ ♧';
+  content: '';
   position: absolute;
-  right: 18px;
-  bottom: 10px;
-  color: #5f8f3f;
-  font-size: 18px;
-  letter-spacing: 10px;
-  transform: rotate(7deg);
-  opacity: .55;
+  right: 0;
+  bottom: -12px;
+  width: 180px;
+  height: 70px;
+  opacity: .5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 70'%3E%3Cg fill='none' stroke='%235f8f3f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 58 C36 22, 74 18, 111 34 S151 42, 176 10'/%3E%3Cpath d='M37 33 C28 19, 32 9, 45 4 C54 17, 51 28, 37 33Z'/%3E%3Cpath d='M84 27 C77 15, 80 7, 91 3 C100 16, 97 25, 84 27Z'/%3E%3Cpath d='M132 36 C124 23, 127 11, 140 5 C150 20, 146 32, 132 36Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .about h2,
 .section-title h2,
