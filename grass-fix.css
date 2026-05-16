@@ -1,0 +1,43 @@
+/* Grass decoration layer — final comp direction */
+.flyer::before {
+  left: -36px !important;
+  top: -8px !important;
+  width: 360px !important;
+  height: 145px !important;
+  opacity: .95 !important;
+  z-index: 2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 145'%3E%3Cg fill='none' stroke='%23528a38' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M0 118 C38 55,88 22,144 40 C193 56,235 64,358 12'/%3E%3Cellipse cx='46' cy='70' rx='8' ry='18' transform='rotate(-32 46 70)'/%3E%3Cellipse cx='79' cy='48' rx='8' ry='18' transform='rotate(-18 79 48)'/%3E%3Cellipse cx='114' cy='38' rx='8' ry='18' transform='rotate(-3 114 38)'/%3E%3Cellipse cx='150' cy='43' rx='8' ry='18' transform='rotate(16 150 43)'/%3E%3Cellipse cx='188' cy='55' rx='8' ry='18' transform='rotate(28 188 55)'/%3E%3Cellipse cx='230' cy='54' rx='8' ry='18' transform='rotate(38 230 54)'/%3E%3Cellipse cx='274' cy='38' rx='8' ry='18' transform='rotate(46 274 38)'/%3E%3Cellipse cx='318' cy='20' rx='8' ry='18' transform='rotate(52 318 20)'/%3E%3Cpath d='M18 104 c18 4 30 13 38 28 M245 48 c22 4 38 13 54 32'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+
+.vine-hero {
+  left: 272px !important;
+  top: 50px !important;
+  width: 310px !important;
+  height: 108px !important;
+  opacity: .95 !important;
+  z-index: 12 !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 310 108'%3E%3Cg fill='none' stroke='%23528a38' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 82 C42 30,91 16,139 42 S222 53,306 8'/%3E%3Cellipse cx='48' cy='48' rx='7' ry='16' transform='rotate(-31 48 48)'/%3E%3Cellipse cx='86' cy='31' rx='7' ry='15' transform='rotate(-10 86 31)'/%3E%3Cellipse cx='126' cy='39' rx='7' ry='15' transform='rotate(18 126 39)'/%3E%3Cellipse cx='168' cy='49' rx='7' ry='15' transform='rotate(30 168 49)'/%3E%3Cellipse cx='214' cy='45' rx='7' ry='15' transform='rotate(42 214 45)'/%3E%3Cellipse cx='260' cy='24' rx='7' ry='15' transform='rotate(50 260 24)'/%3E%3Cpath d='M18 74 c18 5 31 16 40 30 M207 42 c18 5 32 15 44 31'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+
+.about::before {
+  left: 170px !important;
+  top: -52px !important;
+  width: 360px !important;
+  height: 135px !important;
+  opacity: .9 !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 135'%3E%3Cg fill='none' stroke='%23528a38' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 102 C48 42,96 18,154 40 S248 66,354 10'/%3E%3Cellipse cx='50' cy='60' rx='8' ry='17' transform='rotate(-34 50 60)'/%3E%3Cellipse cx='89' cy='38' rx='8' ry='17' transform='rotate(-15 89 38)'/%3E%3Cellipse cx='132' cy='35' rx='8' ry='17' transform='rotate(8 132 35)'/%3E%3Cellipse cx='176' cy='48' rx='8' ry='17' transform='rotate(26 176 48)'/%3E%3Cellipse cx='222' cy='55' rx='8' ry='17' transform='rotate(38 222 55)'/%3E%3Cellipse cx='270' cy='38' rx='8' ry='17' transform='rotate(47 270 38)'/%3E%3Cellipse cx='318' cy='20' rx='8' ry='17' transform='rotate(54 318 20)'/%3E%3Cpath d='M28 88 c18 4 32 16 42 31 M238 47 c19 4 35 15 48 33'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+
+.about::after {
+  right: -8px !important;
+  bottom: 26px !important;
+  width: 280px !important;
+  height: 120px !important;
+  opacity: .85 !important;
+}
+
+.flyer::after {
+  height: 112px !important;
+  opacity: .85 !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1180 120'%3E%3Cg fill='none' stroke='%23528a38' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M0 119 C90 72,165 96,250 58 S438 84,532 50 S738 94,846 58 S1022 88,1180 42'/%3E%3Cpath d='M8 119 C10 90,17 69,28 44 M34 119 C36 88,44 66,57 38 M62 119 C68 86,78 64,92 34 M96 119 C102 88,113 68,130 43 M1024 119 C1028 88,1036 66,1050 38 M1054 119 C1062 86,1072 64,1088 36 M1092 119 C1098 90,1110 68,1128 42 M1130 119 C1138 92,1150 72,1170 48'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
