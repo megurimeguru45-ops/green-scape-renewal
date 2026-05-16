@@ -14,74 +14,11 @@
         <nav class="visual-links" aria-label="画像内メニューリンク">
           <a class="hotspot home" href="#top" aria-label="HOME"></a>
           <a class="hotspot about-link" href="#about-note" aria-label="ABOUT"></a>
-          <a class="hotspot works-link" href="#yard-slider" aria-label="YARD STORY"></a>
+          <a class="hotspot works-link" href="#works-note" aria-label="YARD STORY"></a>
           <a class="hotspot service-link" href="#service-note" aria-label="SERVICE"></a>
           <a class="hotspot contact-link" href="mailto:info@green-scape.net" aria-label="CONTACT"></a>
         </nav>
       </section>
-
-      <section class="yard-slider" id="yard-slider" aria-label="施工事例スライダー">
-        <div class="slider-head">
-          <p>YARD STORY</p>
-          <h2>施工事例</h2>
-          <span>写真はあとから実際の施工写真に差し替えできます。</span>
-        </div>
-        <div class="slider-window" data-autoplay-slider>
-          <div class="slider-track">
-            <article class="work-card">
-              <div class="work-photo photo-1"></div>
-              <h3>ナチュラルガーデンのあるお庭</h3>
-              <p>BEFORE → AFTER</p>
-            </article>
-            <article class="work-card">
-              <div class="work-photo photo-2"></div>
-              <h3>アメリカンレトロなエントランス</h3>
-              <p>BEFORE → AFTER</p>
-            </article>
-            <article class="work-card">
-              <div class="work-photo photo-3"></div>
-              <h3>家族で楽しむテラススペース</h3>
-              <p>BEFORE → AFTER</p>
-            </article>
-            <article class="work-card">
-              <div class="work-photo photo-4"></div>
-              <h3>メンテナンスが楽なロックガーデン</h3>
-              <p>BEFORE → AFTER</p>
-            </article>
-            <article class="work-card">
-              <div class="work-photo photo-5"></div>
-              <h3>庭時間を楽しむ小さなスペース</h3>
-              <p>BEFORE → AFTER</p>
-            </article>
-            <article class="work-card" aria-hidden="true">
-              <div class="work-photo photo-1"></div>
-              <h3>ナチュラルガーデンのあるお庭</h3>
-              <p>BEFORE → AFTER</p>
-            </article>
-            <article class="work-card" aria-hidden="true">
-              <div class="work-photo photo-2"></div>
-              <h3>アメリカンレトロなエントランス</h3>
-              <p>BEFORE → AFTER</p>
-            </article>
-            <article class="work-card" aria-hidden="true">
-              <div class="work-photo photo-3"></div>
-              <h3>家族で楽しむテラススペース</h3>
-              <p>BEFORE → AFTER</p>
-            </article>
-            <article class="work-card" aria-hidden="true">
-              <div class="work-photo photo-4"></div>
-              <h3>メンテナンスが楽なロックガーデン</h3>
-              <p>BEFORE → AFTER</p>
-            </article>
-            <article class="work-card" aria-hidden="true">
-              <div class="work-photo photo-5"></div>
-              <h3>庭時間を楽しむ小さなスペース</h3>
-              <p>BEFORE → AFTER</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section class="seo-notes" aria-label="ページ情報">
         <h1>株式会社グリーンスケープ</h1>
         <p id="about-note">グリーンスケープは、庭のある暮らしをデザインする会社です。</p>
@@ -89,29 +26,5 @@
         <p id="service-note">ガーデンデザイン、外構・エクステリア、庭のリフォーム、メンテナンスに対応しています。</p>
       </section>
     </main>
-    <script>
-      const slider = document.querySelector('[data-autoplay-slider]');
-      if (slider) {
-        let paused = false;
-        const speed = 0.45;
-        const halfway = () => slider.scrollWidth / 2;
-
-        slider.addEventListener('mouseenter', () => { paused = true; });
-        slider.addEventListener('mouseleave', () => { paused = false; });
-        slider.addEventListener('touchstart', () => { paused = true; }, { passive: true });
-        slider.addEventListener('touchend', () => { paused = false; }, { passive: true });
-
-        function tick() {
-          if (!paused) {
-            slider.scrollLeft += speed;
-            if (slider.scrollLeft >= halfway()) {
-              slider.scrollLeft = 0;
-            }
-          }
-          requestAnimationFrame(tick);
-        }
-        requestAnimationFrame(tick);
-      }
-    </script>
   </body>
 </html>
