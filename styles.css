@@ -1,54 +1,48 @@
-:root {
-  --cream: #fbf4df;
-  --paper: #fff8e7;
-  --ink: #25231d;
-  --green: #2f7132;
-  --green-soft: #77a74e;
-  --yellow: #e7b92f;
-  --mustard: #d49c1e;
-  --blue: #79c1be;
-  --line: #d8c9a8;
-  --shadow: rgba(50, 38, 20, .20);
+body {
+  margin: 0;
+  background: #fbf4df;
+  color: #25231d;
+  font-family: 'Trebuchet MS', 'Yu Gothic', sans-serif;
 }
 
-.main-paper {
-  width: 350px;
-  min-height: 340px;
-  top: 126px;
-  padding: 26px 22px 18px;
+* {
+  box-sizing: border-box;
 }
 
-.main-paper h1 {
-  font-size: 56px;
+.flyer {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #fffaf0;
 }
 
-.main-paper p {
-  font-size: 15px;
-  line-height: 1.7;
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.main-paper b {
-  font-size: 13px;
-  margin: 8px -28px -24px;
+.brand strong {
+  display: block;
+  font-size: 48px;
+  font-weight: 900;
 }
 
-.hero-photo {
-  height: 500px;
+.nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-.hero-photo span {
-  font-size: 44px;
+.nav a {
+  text-decoration: none;
+  color: #25231d;
+  font-weight: 700;
 }
 
-.vine-hero {
-  width: 180px;
-  height: 40px;
-  border-top: 2px dashed #89ab67;
-  opacity: .55;
-}
-
-.vine-hero::before,
-.vine-hero::after {
-  font-size: 14px;
-  letter-spacing: 6px;
+.contact-flag {
+  background: #3f7d32;
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
 }
