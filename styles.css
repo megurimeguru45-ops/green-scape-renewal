@@ -19,10 +19,72 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
+  position: relative;
 }
 
 .approved-visual img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.visual-links {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hotspot {
+  position: absolute;
+  display: block;
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0);
+}
+
+.hotspot:focus-visible {
+  outline: 3px solid rgba(47, 113, 50, .8);
+  outline-offset: 2px;
+}
+
+.home {
+  left: 31%;
+  top: 3.3%;
+  width: 5.5%;
+  height: 2.8%;
+}
+
+.about-link {
+  left: 37%;
+  top: 3.3%;
+  width: 6.8%;
+  height: 2.8%;
+}
+
+.works-link {
+  left: 45%;
+  top: 3.3%;
+  width: 9.7%;
+  height: 2.8%;
+}
+
+.service-link {
+  left: 55.8%;
+  top: 3.3%;
+  width: 7.7%;
+  height: 2.8%;
+}
+
+.contact-link {
+  right: 3.4%;
+  top: 2.2%;
+  width: 9.2%;
+  height: 5.8%;
+}
+
+.seo-notes {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
