@@ -30,6 +30,117 @@ body {
   z-index: 1;
 }
 
+.photo-window {
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+  background: transparent;
+}
+
+.before-window {
+  left: 0;
+  top: 9.5%;
+  width: 45.2%;
+  height: 27.9%;
+}
+
+.after-window {
+  left: 54.3%;
+  top: 9.5%;
+  width: 45.7%;
+  height: 27.9%;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+  animation: fadeSlide 15s infinite;
+}
+
+.before-window .slide-a {
+  background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80');
+  animation-delay: 0s;
+}
+
+.before-window .slide-b {
+  background-image: url('https://images.unsplash.com/photo-1563201515-adbe35c669c4?auto=format&fit=crop&w=1400&q=80');
+  animation-delay: 5s;
+}
+
+.before-window .slide-c {
+  background-image: url('https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?auto=format&fit=crop&w=1400&q=80');
+  animation-delay: 10s;
+}
+
+.after-window .slide-a {
+  background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80');
+  animation-delay: 0s;
+}
+
+.after-window .slide-b {
+  background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=80');
+  animation-delay: 5s;
+}
+
+.after-window .slide-c {
+  background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80');
+  animation-delay: 10s;
+}
+
+.photo-window b {
+  position: absolute;
+  top: 6%;
+  z-index: 3;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: clamp(20px, 5vw, 72px);
+  letter-spacing: .08em;
+  line-height: 1;
+  color: #23301f;
+  text-shadow: 1px 1px 0 #fffaf0;
+  opacity: .92;
+}
+
+.before-window b {
+  left: 15%;
+  transform: rotate(-5deg);
+}
+
+.after-window b {
+  right: 17%;
+  color: #2f7132;
+  transform: rotate(5deg);
+}
+
+.wood-overlay {
+  position: absolute;
+  right: 7.5%;
+  top: 36%;
+  z-index: 4;
+  display: grid;
+  gap: 6px;
+}
+
+.wood-overlay span {
+  display: block;
+  padding: .35em .9em;
+  background: rgba(105, 72, 43, .92);
+  color: #fff4d9;
+  font: 700 clamp(8px, 1.3vw, 16px)/1.1 sans-serif;
+  letter-spacing: .1em;
+}
+
+@keyframes fadeSlide {
+  0% { opacity: 0; transform: scale(1.02); }
+  8% { opacity: 1; transform: scale(1); }
+  30% { opacity: 1; transform: scale(1); }
+  38% { opacity: 0; transform: scale(1.02); }
+  100% { opacity: 0; transform: scale(1.02); }
+}
+
 .visual-links {
   position: absolute;
   inset: 0;
