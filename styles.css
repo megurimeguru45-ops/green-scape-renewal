@@ -22,10 +22,21 @@ body {
   gap: 20px;
 }
 
+.brand {
+  color: #25231d;
+  text-decoration: none;
+}
+
 .brand strong {
   display: block;
   font-size: 48px;
+  line-height: 0.95;
   font-weight: 900;
+}
+
+.brand span {
+  letter-spacing: 0.35em;
+  font-size: 11px;
 }
 
 .nav {
@@ -45,4 +56,155 @@ body {
   color: white;
   padding: 10px 14px;
   text-decoration: none;
+  box-shadow: 4px 4px 0 rgba(231,185,47,.7);
+}
+
+.hero-collage {
+  position: relative;
+  min-height: 650px;
+  margin-top: 18px;
+}
+
+.hero-photo {
+  position: absolute;
+  top: 80px;
+  width: 48%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(50,38,20,.2);
+}
+
+.before-photo {
+  left: 0;
+  background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80');
+  transform: rotate(-2deg);
+}
+
+.after-photo {
+  right: 0;
+  background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80');
+  transform: rotate(2deg);
+}
+
+.hero-photo span {
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  font-size: 44px;
+  font-family: Impact, sans-serif;
+  background: #f3d175;
+  padding: 8px 14px;
+}
+
+.after-photo span {
+  left: auto;
+  right: 22px;
+  background: #477e36;
+  color: white;
+}
+
+.main-paper {
+  position: absolute;
+  left: 50%;
+  top: 126px;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 350px;
+  min-height: 340px;
+  padding: 26px 22px 18px;
+  background: #fff8e7;
+  text-align: center;
+  box-shadow: 0 12px 22px rgba(52,43,26,.16);
+  z-index: 5;
+}
+
+.main-paper h1 {
+  font-size: 56px;
+  line-height: 0.95;
+  font-family: Impact, sans-serif;
+  margin: 10px 0;
+}
+
+.main-paper p {
+  color: #2f7132;
+  font-weight: 900;
+  line-height: 1.7;
+}
+
+.main-paper b {
+  display: block;
+  background: #e7b92f;
+  padding: 10px;
+  margin-top: 12px;
+}
+
+.vine-hero {
+  position: absolute;
+  left: 315px;
+  top: 20px;
+  width: 180px;
+  height: 40px;
+  border-top: 2px dashed #89ab67;
+  opacity: .55;
+}
+
+.wood-sign {
+  position: absolute;
+  right: 35px;
+  top: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 6;
+}
+
+.wood-sign span {
+  background: #7a5a37;
+  color: #fff6df;
+  padding: 8px 14px;
+  font-weight: 900;
+}
+
+.about,
+.yard-story,
+.service,
+.footer {
+  margin-top: 30px;
+}
+
+.story-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 960px) {
+  .site-header,
+  .nav,
+  .story-row {
+    display: block;
+  }
+
+  .hero-collage {
+    display: grid;
+    min-height: auto;
+    gap: 16px;
+  }
+
+  .hero-photo,
+  .main-paper,
+  .wood-sign,
+  .vine-hero {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    transform: none;
+  }
+
+  .hero-photo {
+    height: 300px;
+  }
 }
