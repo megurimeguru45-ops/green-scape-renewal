@@ -26,7 +26,7 @@
           <h2>施工事例</h2>
           <span>写真はあとから実際の施工写真に差し替えできます。</span>
         </div>
-        <div class="slider-window">
+        <div class="slider-window" data-autoplay-slider>
           <div class="slider-track">
             <article class="work-card">
               <div class="work-photo photo-1"></div>
@@ -89,5 +89,29 @@
         <p id="service-note">ガーデンデザイン、外構・エクステリア、庭のリフォーム、メンテナンスに対応しています。</p>
       </section>
     </main>
+    <script>
+      const slider = document.querySelector('[data-autoplay-slider]');
+      if (slider) {
+        let paused = false;
+        const speed = 0.45;
+        const halfway = () => slider.scrollWidth / 2;
+
+        slider.addEventListener('mouseenter', () => { paused = true; });
+        slider.addEventListener('mouseleave', () => { paused = false; });
+        slider.addEventListener('touchstart', () => { paused = true; }, { passive: true });
+        slider.addEventListener('touchend', () => { paused = false; }, { passive: true });
+
+        function tick() {
+          if (!paused) {
+            slider.scrollLeft += speed;
+            if (slider.scrollLeft >= halfway()) {
+              slider.scrollLeft = 0;
+            }
+          }
+          requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+    </script>
   </body>
 </html>
