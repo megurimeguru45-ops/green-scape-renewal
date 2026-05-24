@@ -18,16 +18,16 @@ body {
 .real-top {
   min-height: 100vh;
   background:
-    radial-gradient(rgba(80,60,35,.065) .6px, transparent .7px),
+    radial-gradient(rgba(80,60,35,.055) .6px, transparent .7px),
     #fffaf0;
-  background-size: 7px 7px, auto;
+  background-size: 8px 8px, auto;
 }
 
 .hero {
   max-width: 1200px;
-  min-height: 690px;
+  min-height: 760px;
   margin: 0 auto;
-  padding: 26px 34px 56px;
+  padding: 42px 42px 86px;
   position: relative;
   overflow: hidden;
 }
@@ -36,7 +36,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 22px;
+  gap: 34px;
   position: relative;
   z-index: 5;
 }
@@ -57,7 +57,7 @@ body {
 .logo strong {
   display: block;
   margin-top: 2px;
-  font-size: clamp(30px, 3.7vw, 45px);
+  font-size: clamp(30px, 3.5vw, 43px);
   line-height: 1.05;
   font-weight: 900;
   letter-spacing: .03em;
@@ -72,8 +72,8 @@ body {
 
 .hero-nav {
   display: flex;
-  gap: clamp(11px, 1.7vw, 20px);
-  padding-top: 22px;
+  gap: clamp(12px, 1.8vw, 22px);
+  padding-top: 24px;
   flex-wrap: wrap;
 }
 
@@ -111,20 +111,20 @@ body {
 
 .hero-stage {
   position: relative;
-  height: 520px;
-  margin-top: 42px;
+  height: 580px;
+  margin-top: 62px;
 }
 
 .photo {
   position: absolute;
-  top: 48px;
-  width: 50.2%;
-  height: 385px;
+  top: 70px;
+  width: 48.8%;
+  height: 390px;
   margin: 0;
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 14px 25px rgba(45,35,20,.18);
+  box-shadow: 0 14px 25px rgba(45,35,20,.16);
 }
 
 .photo::before {
@@ -140,12 +140,12 @@ body {
 }
 
 .photo-before {
-  left: -34px;
+  left: -18px;
   background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80');
 }
 
 .photo-after {
-  right: -34px;
+  right: -18px;
   background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80');
 }
 
@@ -155,7 +155,7 @@ body {
   left: 56px;
   z-index: 4;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: clamp(38px, 5.4vw, 67px);
+  font-size: clamp(36px, 5vw, 62px);
   line-height: 1;
   letter-spacing: .06em;
   color: var(--ink);
@@ -173,18 +173,18 @@ body {
 .paper-card {
   position: absolute;
   left: 50%;
-  top: 88px;
+  top: 116px;
   transform: translateX(-50%) rotate(-1.4deg);
-  width: min(360px, 35vw);
-  min-height: 334px;
+  width: min(342px, 32vw);
+  min-height: 318px;
   z-index: 6;
   background:
-    radial-gradient(rgba(80,60,35,.06) .5px, transparent .7px),
+    radial-gradient(rgba(80,60,35,.055) .5px, transparent .7px),
     var(--paper);
-  background-size: 6px 6px, auto;
+  background-size: 7px 7px, auto;
   text-align: center;
-  padding: 30px 22px 0;
-  box-shadow: 0 12px 24px rgba(48,40,26,.18);
+  padding: 28px 22px 0;
+  box-shadow: 0 12px 24px rgba(48,40,26,.16);
 }
 
 .paper-card::before,
@@ -203,7 +203,7 @@ body {
 .card-lead {
   margin: 0 0 16px;
   color: var(--green);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 900;
   line-height: 1.7;
   letter-spacing: .08em;
@@ -213,8 +213,8 @@ body {
   margin: 0;
   color: var(--green);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: clamp(38px, 5.1vw, 60px);
-  line-height: .95;
+  font-size: clamp(34px, 4.6vw, 54px);
+  line-height: .96;
   letter-spacing: .04em;
 }
 
@@ -224,18 +224,18 @@ body {
 
 .card-sub {
   display: block;
-  margin: 18px -26px 0;
+  margin: 18px -24px 0;
   padding: 12px 10px;
   background: var(--yellow);
   color: var(--ink);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 900;
 }
 
 .wood-sign {
   position: absolute;
-  right: 46px;
-  top: 220px;
+  right: 44px;
+  top: 222px;
   z-index: 5;
   display: grid;
   gap: 7px;
@@ -252,12 +252,12 @@ body {
 }
 
 @media (max-width: 900px) {
-  .hero { padding: 22px 16px 42px; }
+  .hero { padding: 22px 16px 42px; min-height: auto; }
   .hero-header { display: block; }
   .logo { min-width: 0; display: block; }
   .hero-nav { padding-top: 20px; }
   .header-contact { display: inline-block; margin-top: 18px; }
-  .hero-stage { height: auto; display: grid; gap: 16px; margin-top: 30px; }
+  .hero-stage { height: auto; display: grid; gap: 18px; margin-top: 34px; }
   .photo,
   .paper-card { position: relative; left: auto; right: auto; top: auto; width: 100%; transform: none; }
   .photo { height: 280px; }
